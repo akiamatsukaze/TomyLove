@@ -1,0 +1,111 @@
+/* TomyLove 温馨粉色主题 */
+
+:root {
+  --vp-c-brand-1: #e6457a;
+  --vp-c-brand-2: #f2729f;
+  --vp-c-brand-3: #f598b4;
+  --vp-c-brand-soft: rgba(230, 69, 122, 0.14);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #e6457a 30%, #f9a8c0);
+
+  --vp-custom-block-tip-border: #f2729f;
+  --vp-custom-block-tip-text: #c73668;
+  --vp-custom-block-tip-bg: #fdf1f5;
+}
+
+.dark {
+  --vp-c-brand-1: #f2729f;
+  --vp-c-brand-2: #f598b4;
+  --vp-c-brand-3: #e6457a;
+  --vp-custom-block-tip-bg: #2b2026;
+  --vp-custom-block-tip-text: #f598b4;
+}
+
+/* 首页 hero 区域 */
+.VPHero {
+  padding-top: 40px;
+}
+
+.VPHero .name,
+.VPHero .text {
+  background: var(--vp-home-hero-name-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.VPHero .tagline {
+  max-width: 36rem;
+}
+
+.VPHero .tagline::after {
+  content: ' ♥';
+  color: #e6457a;
+}
+
+/* 文章页面标题装饰 */
+.vp-doc h1 {
+  background: linear-gradient(120deg, #e6457a 30%, #f9a8c0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 时间轴样式 */
+.timeline {
+  border-left: 2px solid #f9a8c0;
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+}
+
+.tl-item {
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -1.95rem;
+  top: 0.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: #e6457a;
+  box-shadow: 0 0 0 3px #fde3ec;
+}
+
+.dark .tl-item::before {
+  box-shadow: 0 0 0 3px #3a2530;
+}
+
+.tl-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+}
+
+.tl-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0.3rem;
+}
+
+.tl-desc p {
+  margin: 0;
+  color: var(--vp-c-text-2);
+}
+
+/* 许愿清单大头钉点 */
+.wishlist li {
+  margin: 0.4rem 0;
+}
+
+/* 移动端更紧凑 */
+@media (max-width: 640px) {
+  .VPHero .main {
+    padding-top: 2rem;
+  }
+}

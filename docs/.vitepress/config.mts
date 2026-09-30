@@ -26,6 +26,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'TomyLove',
   description: '我们的恋爱小窝，记录与你在一起的每一个瞬间',
+  base: '/TomyLove/',
   cleanUrls: true,
   lastUpdated: false,
   themeConfig: {

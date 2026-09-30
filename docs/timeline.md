@@ -12,8 +12,8 @@
 
 <div class="tl-item">
   <div class="tl-date">2026.9.29</div>
-  <div class="tl-title">恋爱小窝上线</div>
-  <div class="tl-desc">赶在见面之前，多亏了橘包，把记录我们日常的小窝的想法变为现实。</div>
+  <div class="tl-title">恋爱手帐上线</div>
+  <div class="tl-desc">赶在见面之前，多亏了橘包，把记录我们日常的手帐的想法变为现实。</div>
 </div>
 
 <div class="tl-item">
@@ -32,6 +32,18 @@
   <div class="tl-date">2026.4.23</div>
   <div class="tl-title">第一次约会</div>
   <div class="tl-desc">手捧鲜花站在楼下，你的小狗在楼下驾到啦。</div>
+</div>
+
+<div class="tl-item">
+  <div class="tl-date">2026.3.29</div>
+  <div class="tl-title">第一次感受到你的喜欢</div>
+  <div class="tl-desc">“讨厌你毁了我平静的生活 让我期待有依赖”</div>
+</div>
+
+<div class="tl-item">
+  <div class="tl-date">2026.2.14</div>
+  <div class="tl-title">第一次过情人节</div>
+  <div class="tl-desc">我把所有的爱藏在那把枪上。</div>
 </div>
 
 <div class="tl-item">

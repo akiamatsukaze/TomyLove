@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: To my Love
-  text: Aki和小橘的恋爱手账
+  text: Aki和小橘的恋爱手帐
   tagline: 把所有心动与日常，都好好收藏在这里
   actions:
     - theme: brand

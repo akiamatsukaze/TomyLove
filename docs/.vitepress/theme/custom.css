@@ -103,6 +103,39 @@
   margin: 0.4rem 0;
 }
 
+/* 合照背景 + 高斯模糊 */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/TomyLove/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  transform: scale(1.05); /* 避免模糊后边缘出现透明缝 */
+  z-index: -2;
+}
+
+/* 背景上叠一层半透明遮罩，保证文字可读 */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.82);
+  z-index: -1;
+}
+
+.dark body::after {
+  background: rgba(26, 22, 30, 0.82);
+}
+
 /* 移动端更紧凑 */
 @media (max-width: 640px) {
   .VPHero .main {

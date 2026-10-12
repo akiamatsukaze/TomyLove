@@ -1,0 +1,1 @@
+import{_ as l,o as t,c as e,a2 as s}from"./chunks/framework.DLibX2HW.js";const h=JSON.parse('{"title":"许愿清单","description":"","frontmatter":{},"headers":[],"relativePath":"wishlist.md","filePath":"wishlist.md"}'),a={name:"wishlist.md"};function o(c,i,r,d,_,n){return t(),e("div",null,[...i[0]||(i[0]=[s("",4)])])}const m=l(a,[["render",o]]);export{h as __pageData,m as default};

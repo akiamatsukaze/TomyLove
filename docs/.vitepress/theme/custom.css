@@ -134,6 +134,12 @@
   color: var(--vp-c-text-1);
 }
 
+/* 导航栏底色铺满整宽 —— VitePress 默认只在中间那段（content-body）上底色，
+   宽屏时右侧会空出一截露出背景图，看起来像右上角缺了一块 */
+.VPNavBar:not(.home) {
+  background-color: var(--vp-nav-bg-color) !important;
+}
+
 /* 合照背景 + 高斯模糊 */
 body::before {
   content: '';

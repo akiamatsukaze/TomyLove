@@ -103,6 +103,37 @@
   margin: 0.4rem 0;
 }
 
+/* 文章顶部的日期小标签 */
+.post-date {
+  display: inline-block;
+  margin: 0.2rem 0 1.6rem;
+  padding: 2px 12px;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border-radius: 999px;
+}
+
+/* 文章里的引用块：淡粉底 + 左侧粉色描边 */
+.vp-doc blockquote {
+  margin: 1.2rem 0;
+  padding: 0.7rem 1.1rem;
+  border-left: 3px solid var(--vp-c-brand-3);
+  border-radius: 0 10px 10px 0;
+  background: rgba(230, 69, 122, 0.06);
+}
+
+.dark .vp-doc blockquote {
+  background: rgba(242, 114, 159, 0.08);
+}
+
+.vp-doc blockquote > p {
+  margin: 0;
+  color: var(--vp-c-text-1);
+}
+
 /* 合照背景 + 高斯模糊 */
 body::before {
   content: '';

@@ -138,16 +138,10 @@
 body::before {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/TomyLove/bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(8px);
-  transform: scale(1.05); /* 避免模糊后边缘出现透明缝 */
+  /* 向外扩一圈，重模糊后边缘不会露出透明的白边 */
+  inset: -70px;
+  background: url('/TomyLove/bg.jpg') center / cover no-repeat;
+  filter: blur(32px);
   z-index: -2;
 }
 

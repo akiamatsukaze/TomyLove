@@ -140,14 +140,13 @@
   background-color: var(--vp-nav-bg-color) !important;
 }
 
-/* 合照背景 + 高斯模糊 */
+/* 首页合照背景：按 EXIF 摆正后的横向合照，轻虚化铺满整屏
+   （原图带 EXIF 方向标记，处理时已转正，不再是竖条） */
 body::before {
   content: '';
   position: fixed;
-  /* 向外扩一圈，重模糊后边缘不会露出透明的白边 */
-  inset: -70px;
-  background: url('/TomyLove/bg.jpg') center / cover no-repeat;
-  filter: blur(32px);
+  inset: 0;
+  background: url('/TomyLove/bg-soft.webp?v=2') center / cover no-repeat;
   z-index: -2;
 }
 
@@ -159,12 +158,38 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.62);
   z-index: -1;
 }
 
 .dark body::after {
   background: rgba(26, 22, 30, 0.82);
+}
+
+/* 文章页（首页以外的所有页面）：换成玫瑰花纹背景，首页继续保留合照
+   使用周期砖（693×1040）无缝平铺，高度按 auto 等比缩放，花纹不拉伸变形 */
+body:not(:has(.VPHero))::before {
+  background-image: url('/TomyLove/rose-tile.webp');
+  background-position: left top;
+  background-size: 600px auto;
+  background-repeat: repeat;
+  filter: none;
+}
+
+/* 手机屏幕窄，砖块按比例缩小一点，避免单朵玫瑰过大 */
+@media (max-width: 640px) {
+  body:not(:has(.VPHero))::before {
+    background-size: 440px auto;
+  }
+}
+
+/* 文章页遮罩比首页更淡，让花纹透出来一点，同时保证正文可读 */
+body:not(:has(.VPHero))::after {
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.dark body:not(:has(.VPHero))::after {
+  background: rgba(26, 22, 30, 0.86);
 }
 
 /* 移动端更紧凑 */

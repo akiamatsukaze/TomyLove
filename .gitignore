@@ -1,3 +1,6 @@
 node_modules/
 docs/.vitepress/dist/
 docs/.vitepress/cache/
+
+# 背景原图（已处理成 docs/public/rose-pattern.webp，原图不入库）
+/微信图片_20261105141455_133813_73.jpg
